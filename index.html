@@ -6,15 +6,15 @@
 function submit() {
   document.querySelector("#id").value = "";
   document.querySelector("#pwd").value = "";
-  document.querySelector("#form").submit();
+  return true;
 }
 </script>
 </head>
 <body>
-<form id="form" action="https://www.example.com">
+<form id="form" action="https://www.example.com" onsubmit="return submit();">
 <input type="text" id="id" name="id">
 <input type="password" id="pwd" name="pwd">
-<input type="submit" onsubmit="submit()">
+<input type="submit">
 </form>
 </body>
 </html>
