@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
-function submit() {
+function validate() {
   document.querySelector("#id").value = "";
   document.querySelector("#pwd").value = "";
   return false;
@@ -11,7 +11,7 @@ function submit() {
 </script>
 </head>
 <body>
-<form id="form" action="https://www.example.com" onsubmit="return submit();">
+<form id="form" action="https://www.example.com" onsubmit="return validate();" method="post">
 <input type="text" id="id" name="id">
 <input type="password" id="pwd" name="pwd">
 <input type="submit">
