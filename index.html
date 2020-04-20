@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+function click() {
+  document.querySelector("#id").value = "";
+  document.querySelector("#pwd").value = "";
+  document.querySelector("#form").submit();
+}
+</script>
 </head>
 <body>
-<form action="https://www.naver.com">
-<input type="text" name="id">
-<input type="password" name="pwd">
-<input type="submit">
-</form>
-
-<form action="https://www.naver.com">
-<input type="text" name="id2">
-<input type="password" name="pwd2">
-<input type="submit">
+<form id="form" action="https://www.example.com">
+<input type="text" id="id" name="id">
+<input type="password" id="pwd" name="pwd">
+<input type="button" onclick="click();">
 </form>
 </body>
 </html>
