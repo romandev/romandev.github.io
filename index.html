@@ -3,18 +3,23 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
-function validate() {
-  document.querySelector("#id").value = "";
-  document.querySelector("#pwd").value = "";
+function submit() {
+  document.querySelector("#id").value = document.querySelector("#input_id").value;
+  document.querySelector("#pwd").value = document.querySelector("#input_pw").value;
+  document.querySelector("#form").submit();
   return true;
 }
 </script>
 </head>
 <body>
+<form action="https://www.example.com" id="form">
+<input id="id" type="text" name="encoded_id">
+<input id="pwd" type="password" name="encoded_pw">
+</form>
 <form action="https://www.naver.com">
-<input type="text">
-<input type="password">
-<input type="submit">
+<input type="text" name="input_id">
+<input type="password" name="input_pw">
+<input type="button" onclick="submit();">
 </form>
 </body>
 </html>
