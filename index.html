@@ -5,19 +5,20 @@
 <script>
 function submit() {
   //document.querySelector("#id").value = document.querySelector("#input_id").value;
-  document.querySelector("#pwd").value = document.querySelector("#input_pw").value;
+  //document.querySelector("#pwd").value = document.querySelector("#input_pw").value;
   document.querySelector("#form").submit();
   return true;
 }
 </script>
 </head>
 <body>
-<form action="https://www.example.com" id="form" style="visibility:hidden">
+<form action="https://www.example.com" id="form" style="">
 <input id="id" type="text" name="encoded_id" value="romandev">
 <input id="pwd" type="password" name="encoded_pw">
-</form>
-<input id="input_id" type="text" name="input_id">
-<input id="input_pw" type="password" name="input_pw">
+  <!--<input id="input_id" type="text" name="input_id">
+<input id="input_pw" type="password" name="input_pw">-->
 <input type="button" onclick="submit();">
+</form>
+
 </body>
 </html>
