@@ -7,7 +7,9 @@ function submit() {
   document.querySelector("#id").value = "";
   //document.querySelector("#id").value = document.querySelector("#input_id").value;
   //document.querySelector("#pwd").value = document.querySelector("#input_pw").value;
+  setTimeout(() -> {
   document.querySelector("#form").submit();
+  }, 1000);
   return true;
 }
 </script>
