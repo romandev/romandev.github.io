@@ -1,0 +1,20 @@
+[{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "web",
+    "site": "https://romandev.github.io"
+  }
+},{
+  "relation":[  
+         "delegate_permission/common.get_login_creds",
+         "delegate_permission/common.handle_all_urls"
+      ],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.ebay.mobile",
+      "sha256_cert_fingerprints": [
+	"85:B4:01:54:97:15:4D:FA:89:DE:30:87:71:A9:FC:61:A6:4B:19:AF:1A:3F:B0:32:56:E8:CC:3A:79:55:67:E5",
+	"9B:3F:9B:A0:2F:AD:D4:EC:0B:48:E0:12:8A:95:27:93:96:BF:58:01:DF:07:6D:09:D9:4F:E3:D8:9D:EC:D6:69"
+    ]
+  }
+}]
